@@ -1,4 +1,4 @@
-<h2>Gatos Buscando Hogar</h2>
+<h3>Gatos Buscando Hogar</h3>
 <hr>
 
 <div class="row">
@@ -14,11 +14,11 @@
    </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Michi</td>
-      <td>3 años</td>
-      <td>A michi le gusta jugar con ratoncitos y dormir en las alturas.</td>
+    <tr *ngFor="let cat of cats">
+      <td>{{cat.id}}</td>
+      <td>{{cat.name}}</td>
+      <td>{{cat.age}}</td>
+      <td>{{cat.description}}</td>
       <td>
         <a href="#">Ver...</a>
       </td>

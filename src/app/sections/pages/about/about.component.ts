@@ -12,7 +12,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 blog(){
-this.router.navigate(['blog'], {relativeTo:this.route})
+this.router.navigate(['location'], {relativeTo:this.route})
 }
 }

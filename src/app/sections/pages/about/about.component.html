@@ -1,11 +1,25 @@
 <h3>About Us</h3>
-<div class="card" style="width: 20rem;">
-  <img src="https://i.etsystatic.com/8929609/r/il/2e8360/920553216/il_1588xN.920553216_h4i1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Refugio de Mascotas</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, obcaecati animi! Illo, quia a! Molestias ad fugiat iste, magnam culpa at quam voluptates eius dolore aut nulla nam reprehenderit dignissimos!</p>
-    <a  (click)="blog()" class="btn btn-primary">Donde Estamos</a>
-    <router-outlet></router-outlet>
+<div class="container">
+
+  <div class="row align-items-start">
+
+    <div class="col card" style="width: 20rem;">
+      <img src="https://i.etsystatic.com/8929609/r/il/2e8360/920553216/il_1588xN.920553216_h4i1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Refugio de Mascotas</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, obcaecati animi! Illo, quia a! Molestias ad fugiat iste, magnam culpa at quam voluptates eius dolore aut nulla nam reprehenderit dignissimos!</p>
+      </div>
+    </div>
+
+    <div class="col card" style="width: 20rem;">
+      <img src="https://lh3.googleusercontent.com/proxy/9bt2c52WATmP1liaGZ4jhyvFbq_vnOJkjBZMruPjPRrAa9nNQayZlqlOsCIB17WzmJX6a6Iml8JMHo86IMyefmEEdFRmCS-47PEq65Phi_N8VNGy2mwEjX-ELf3U" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hazte voluntario/a</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, obcaecati animi! Illo, quia a! Molestias ad fugiat iste, magnam culpa at quam voluptates eius dolore aut nulla nam reprehenderit dignissimos! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
   </div>
-</div>
+
+  <a  (click)="blog()" class="btn btn-primary btn-blog">Dónde Estamos</a>
+  <router-outlet></router-outlet>
 <!-- [routerLink]="['/about/blog']" otra forma de rutas children-->

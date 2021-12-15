@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { PetsService } from 'src/app/service/pets.service';
 
 @Component({
   selector: 'app-dogs',
   templateUrl: './dogs.component.html',
   styleUrls: ['./dogs.component.css']
 })
-export class DogsComponent implements OnInit {
+export class DogsComponent {
 
-  constructor() { }
+  constructor(private petService: PetsService) {}
+
+
+  get dogs(){
+    return this.petService.dogs;
+  }
 
   ngOnInit(): void {
   }

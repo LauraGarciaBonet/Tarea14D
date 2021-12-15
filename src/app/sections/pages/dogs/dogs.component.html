@@ -14,11 +14,11 @@
    </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Tobby</td>
-      <td>6 meses</td>
-      <td>Tobby es muy cariñoso, obediente y es un mestizo de labrador con Border Collie</td>
+    <tr *ngFor="let dog of dogs">
+      <td>{{dog.id}}</td>
+      <td>{{dog.name}}</td>
+      <td>{{dog.age}}</td>
+      <td>{{dog.description}}</td>
       <td>
         <a href="#">Ver...</a>
       </td>

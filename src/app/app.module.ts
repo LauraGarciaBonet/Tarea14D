@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectionsModule } from './sections/sections.module';
+import { PetsService } from './service/pets.service';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -15,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
     SectionsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PetsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

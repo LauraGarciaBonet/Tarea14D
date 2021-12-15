@@ -31,7 +31,7 @@ const routes: Routes=[
   component: AboutComponent,
   children:[
   {
-    path:'blog',
+    path:'location',
     component:BlogComponent
   }
 ]
